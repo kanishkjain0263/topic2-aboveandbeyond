@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lighting Control Interface</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center">Smart Lighting Control Interface</h1>
+        <form>
+            <h2 class="my-4">Control Panel</h2>
+            <div class="form-group mb-3">
+                <label for="light-select" class="form-label">Select a Light:</label>
+                <select class="form-control" id="light-select">
+                    <option value="light1">Light 1</option>
+                    <option value="light2">Light 2</option>
+                    <option value="light3">Light 3</option>
+                </select>
+            </div>
+            <br>
+            <div class="light" id="light1">
+                <h2>Light 1</h2>
+                <label for="light1-color">Color</label>
+                <input type="color" id="light1-color" value="#ffffff">
+            </div>
+            <br>
+            <div class="light" id="light2">
+                <h2>Light 2</h2>
+                <label for="light2-color">Color</label>
+                <input type="color" id="light2-color" value="#ffffff">
+            </div>
+            <br>
+            <div class="light" id="light3">
+                <h2>Light 3</h2>
+                <label for="light3-color">Color</label>
+                <input type="color" id="light3-color" value="#ffffff">
+            </div>
+
+            <br>
+            <button type="submit" class="btn btn-primary">Reset Colours</button> 
+        </form>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
