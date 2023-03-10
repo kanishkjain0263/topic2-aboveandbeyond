@@ -32,3 +32,25 @@ function displayLightColor(light, color) {
     // Update the background color of the light element
     lightElement.style.backgroundColor = color;
 }
+
+
+
+// Get the select element and all the light elements
+const select = document.getElementById("light-select");
+const lights = document.querySelectorAll(".light");
+
+// Add an event listener to the select element
+select.addEventListener("change", function () {
+    // Get the ID of the selected option
+    const selectedID = select.value;
+
+    // Loop through all the light elements
+    for (let i = 0; i < lights.length; i++) {
+        // If the light has the same ID as the selected option, show it, otherwise hide it
+        if (lights[i].id === selectedID) {
+            lights[i].style.display = "block";
+        } else {
+            lights[i].style.display = "none";
+        }
+    }
+});
